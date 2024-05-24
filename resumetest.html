@@ -18,7 +18,22 @@
   <title>About Me</title>  
 
 <link href="./main.3f6952e4.css" rel="stylesheet"></head>
+<style>
+  .pdf-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 100%; /* Set aspect ratio to 1:1 (square) */
+  }
 
+  .pdf-object {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+</style>
 
 <body class="">
 <div id="site-border-left"></div>
@@ -61,11 +76,12 @@
           
           
             <div class="section-container-spacer text-center">
-                <p><a href="https://drive.usercontent.google.com/download?id=17qWCjuuiFBZvOPABXoAhRqS0yBl2eZXJ&export=download&authuser=0&confirm=t&uuid=d4cdf8ff-6f9b-4212-b1f5-4f327105b6fc&at=APZUnTXiT8Kbc9SlOoWd1vNu2xT2:1716570816631" class="btn btn-primary btn-lg">Download</a></p>
+                <p><a href="https://drive.usercontent.google.com/download?id=17qWCjuuiFBZvOPABXoAhRqS0yBl2eZXJ&export=download&authuser=0&confirm=t&uuid=8d59e368-c90e-4345-abde-f0d311946975&at=APZUnTUvN4Vxq8MdXZh7BTQ0ayW9:1716573857827" class="btn btn-primary btn-lg" >Download</a></p>
               </div>
             
-              <iframe src="https://docs.google.com/viewer?url=https://github.com/jomon-palayur/jomon-palayur/raw/main/assets/John%20Babu%20K-1.pdf&embedded=true" width="100%" height="600px"></iframe>
-
+              <div class="pdf-container">
+                <iframe class="pdf-object" src="https://docs.google.com/viewer?url=https://github.com/jomon-palayur/jomon-palayur/raw/main/assets/John%20Babu%20K-1.pdf&embedded=true"></iframe>
+            </div>
               
 
             
