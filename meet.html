@@ -1,18 +1,36 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <script src='https://8x8.vc/vpaas-magic-cookie-fab1eb215b0c4f509ad95189c7e23062/external_api.js' async></script>
-    <style>html, body, #jaas-container { height: 100%; }</style>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #jaas-container {
+            width: 100%;
+            height: 100%;
+            max-width: 100vw;
+            max-height: 100vh;
+            box-sizing: border-box;
+        }
+    </style>
     <script type="text/javascript">
-      window.onload = () => {
-        const api = new JitsiMeetExternalAPI("8x8.vc", {
-          roomName: "vpaas-magic-cookie-fab1eb215b0c4f509ad95189c7e23062/SampleAppAngryCourtesiesStruggleExclusively",
-          parentNode: document.querySelector('#jaas-container'),
-                        jwt: "eyJraWQiOiJ2cGFhcy1tYWdpYy1jb29raWUtZmFiMWViMjE1YjBjNGY1MDlhZDk1MTg5YzdlMjMwNjIvMTFjYzNiLVNBTVBMRV9BUFAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJqaXRzaSIsImlzcyI6ImNoYXQiLCJpYXQiOjE3MTY2NTk4OTUsImV4cCI6MTcxNjY2NzA5NSwibmJmIjoxNzE2NjU5ODkwLCJzdWIiOiJ2cGFhcy1tYWdpYy1jb29raWUtZmFiMWViMjE1YjBjNGY1MDlhZDk1MTg5YzdlMjMwNjIiLCJjb250ZXh0Ijp7ImZlYXR1cmVzIjp7ImxpdmVzdHJlYW1pbmciOmZhbHNlLCJvdXRib3VuZC1jYWxsIjpmYWxzZSwic2lwLW91dGJvdW5kLWNhbGwiOmZhbHNlLCJ0cmFuc2NyaXB0aW9uIjpmYWxzZSwicmVjb3JkaW5nIjpmYWxzZX0sInVzZXIiOnsiaGlkZGVuLWZyb20tcmVjb3JkZXIiOmZhbHNlLCJtb2RlcmF0b3IiOnRydWUsIm5hbWUiOiJUZXN0IFVzZXIiLCJpZCI6ImF1dGgwfDY2NTIxZWFkOTNjNTQ3YjM4N2E2ZWY2NCIsImF2YXRhciI6IiIsImVtYWlsIjoidGVzdC51c2VyQGNvbXBhbnkuY29tIn19LCJyb29tIjoiKiJ9.b62bdnqH_sAlwLuQBH-vtePlWt03weLPkbimVhBaSF5TBJIgB92j65OMXLm8GC0D6KooZD6B8EA3S05is-_uZgzFkv3TqJDdbxw9ojq3NR9nII8Sr7YRu2pEcpEqKB9OoO8PnLH9GrRxNe4uJ7Zcgexbobw6WrzJOqRuTRFsf0psC3LquccLUoi0Pw1eUClLARTq0b5yAiJ4CnV-uBlkJet6YMB3iKPewV34jLDkYM-jRym7UAKUzq7k1W5MqnE2u6tZBhHA9PZS8KHLWTFVvWVjoUm-uyn5RKZfCRt-FGzHdfuQZ_aoOgHCyZpSqp_eQ2cKXEF0zNH3eZrhA7KAqw"
-        });
-      }
+        window.onload = () => {
+            // Initialize the Jitsi Meet API
+            const api = new JitsiMeetExternalAPI("8x8.vc", {
+                roomName: "vpaas-magic-cookie-fab1eb215b0c4f509ad95189c7e23062/SampleAppAngryCourtesiesStruggleExclusively",
+                parentNode: document.querySelector('#jaas-container'),
+                jwt: "eyJraWQiOiJ2cGFhcy1tYWdpYy1jb29raWUtZmFiMWViMjE1YjBjNGY1MDlhZDk1MTg5YzdlMjMwNjIvMTFjYzNiLVNBTVBMRV9BUFAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJqaXRzaSIsImlzcyI6ImNoYXQiLCJpYXQiOjE3MTY2NTk4OTUsImV4cCI6MTcxNjY2NzA5NSwibmJmIjoxNzE2NjU5ODkwLCJzdWIiOiJ2cGFhcy1tYWdpYy1jb29raWUtZmFiMWViMjE1YjBjNGY1MDlhZDk1MTg5YzdlMjMwNjIiLCJjb250ZXh0Ijp7ImZlYXR1cmVzIjp7ImxpdmVzdHJlYW1pbmciOmZhbHNlLCJvdXRib3VuZC1jYWxsIjpmYWxzZSwic2lwLW91dGJvdW5kLWNhbGwiOmZhbHNlLCJ0cmFuc2NyaXB0aW9uIjpmYWxzZSwicmVjb3JkaW5nIjpmYWxzZX0sInVzZXIiOnsiaGlkZGVuLWZyb20tcmVjb3JkZXIiOmZhbHNlLCJtb2RlcmF0b3IiOnRydWUsIm5hbWUiOiJUZXN0IFVzZXIiLCJpZCI6ImF1dGgwfDY2NTIxZWFkOTNjNTQ3YjM4N2E2ZWY2NCIsImF2YXRhciI6IiIsImVtYWlsIjoidGVzdC51c2VyQGNvbXBhbnkuY29tIn19LCJyb29tIjoiKiJ9.b62bdnqH_sAlwLuQBH-vtePlWt03weLPkbimVhBaSF5TBJIgB92j65OMXLm8GC0D6KooZD6B8EA3S05is-_uZgzFkv3TqJDdbxw9ojq3NR9nII8Sr7YRu2pEcpEqKB9OoO8PnLH9GrRxNe4uJ7Zcgexbobw6WrzJOqRuTRFsf0psC3LquccLUoi0Pw1eUClLARTq0b5yAiJ4CnV-uBlkJet6YMB3iKPewV34jLDkYM-jRym7UAKUzq7k1W5MqnE2u6tZBhHA9PZS8KHLWTFVvWVjoUm-uyn5RKZfCRt-FGzHdfuQZ_aoOgHCyZpSqp_eQ2cKXEF0zNH3eZrhA7KAqw"
+            });
+        }
     </script>
-  </head>
-  <body><div id="jaas-container" /></body>
+</head>
+<body>
+    <div id="jaas-container"></div>
+</body>
 </html>
