@@ -13,7 +13,7 @@
 
 - 💻 I’m working at **Technology Startup "Piecker"**
 
-- 📫 How to reach me **johnbabukuruthukulam@gmail.com**
+- 📫 How to reach me **contact@johnbabuk.me**
 
 - 📄 Know more about me at [https://www.linkedin.com/in/johnbabuk/](https://www.linkedin.com/in/johnbabuk/)
 
