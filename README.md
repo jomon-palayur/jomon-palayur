@@ -5,15 +5,9 @@
 
 <p align="left"> <a href="https://twitter.com/jomonpalayur" target="blank"><img src="https://img.shields.io/twitter/follow/jomonpalayur?logo=twitter&style=for-the-badge" alt="jomonpalayur" /></a> </p>
 
-- 🔭 I’m currently working on **An Automated Crop Monitoring and Maintenance system**
 
-- 🌱 I’m currently learning **HDL, Web development**
 
-- 🤝 I’m looking to collaborate on **IoT based Projects**
-
-- 💻 I’m working at **Technology Startup "Piecker"**
-
-- 📫 How to reach me **contact@johnbabuk.me**
+- 📫 How to reach me **johnbabuk@proton.me**
 
 - 📄 Know more about me at [https://www.linkedin.com/in/johnbabuk/](https://www.linkedin.com/in/johnbabuk/)
 
